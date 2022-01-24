@@ -9,8 +9,8 @@ osx_version=$((${osx_major_version} * 10000 + ${osx_minor_version} * 100 + ${osx
 homebrew_path=$(brew --prefix)
 brew_prefix=$(brew --prefix | sed 's#/#\\\/#g')
 
-brew_array=("7.2","7.4","8.0")
-php_array=("php@7.2" "php@7.4" "php@8.0")
+brew_array=("7.2","7.4","8.1")
+php_array=("php@7.2" "php@7.4" "php@8.1")
 php_installed_array=()
 php_version="php@$1"
 php_opt_path="$brew_prefix\/opt\/"
