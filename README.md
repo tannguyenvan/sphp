@@ -9,5 +9,5 @@ chmod +x /opt/homebrew/bin/sphp
 
 switch php:
 ```
-sphp 8.0
+sphp 8.1
 ```
