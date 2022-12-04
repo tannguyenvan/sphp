@@ -1,0 +1,8 @@
+Attempting mysql -u root fails with Access denied for user 'root'@'localhost immediately after doing brew install mariadb and starting mariadb with brew services start mariadb.
+
+To fix it (with MariaDB still running):
+
+sudo mysql then enter your Mac user password
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newrootpassword'; replacing newrootpassword with the password you wish to use for the MariaDB root user.
+Ctrl-C to exit mysql.
+You should then be able to connect to MariaDB with mysql -u root -p, then entering the root password when prompted.
